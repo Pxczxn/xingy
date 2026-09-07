@@ -1,0 +1,183 @@
+# ============================================================
+# 依赖
+# ============================================================
+
+node_modules/
+xingyu-admin/node_modules/
+xingyu-uniapp/node_modules/
+
+
+# ============================================================
+# 构建产物
+# ============================================================
+
+target/
+dist/
+xingyu-web/dist/
+xingyu-admin/dist/
+build/
+out/
+.next/
+.vinext/
+.wrangler/
+.turbo/
+
+*.class
+*.war
+*.tsbuildinfo
+*.hprof
+
+# JAR 默认不提交；Gradle Wrapper 属于必要例外
+*.jar
+!gradle/wrapper/gradle-wrapper.jar
+
+# 项目专属：旧管理端模板、后端静态资源打包目录
+mars-admin/
+xingyu-backend/xingyu-starter/src/main/resources/static/
+xingyu-uniapp/unpackage/
+
+
+# ============================================================
+# 缓存、测试与自动生成产物
+# ============================================================
+
+.cache/
+coverage/
+playwright-report/
+test-results/
+
+work/
+outputs/
+.eslintcache
+
+
+# ============================================================
+# 运行时数据
+# ============================================================
+
+.run/
+runtime/
+logs/
+uploads/
+tmp/
+temp/
+
+*.log
+hs_err_pid*.log
+replay_pid*.log
+xingyu-web/vite-dev.log
+xingyu-web/.next-dev-*.log
+*.pid
+*.tmp
+
+
+# ============================================================
+# 密钥与本地环境配置
+# ============================================================
+
+.env
+.env.*
+!.env.example
+
+*.pem
+*.key
+*.p12
+*.jks
+
+application-secret.yml
+
+# application-local.* / application-dev.* 不按文件名默认忽略
+# 应先检查内容；无真实秘密时允许提交
+
+
+# ============================================================
+# 本地数据库与数据库运行数据
+# ============================================================
+
+*.db
+*.sqlite
+*.sqlite3
+
+database/data/
+database/backup/
+
+*.sql.gz
+
+
+# ============================================================
+# IDE 与编辑器本地状态
+# ============================================================
+
+.idea/
+.vscode/
+*.iml
+.classpath
+.project
+.settings/
+
+*.swp
+*.swo
+*~
+
+
+# ============================================================
+# AI / Agent 工作目录
+# ============================================================
+
+.agents/
+.agent/
+.codex/
+.claude/
+.cursor/
+.reasonix/
+.workbuddy/
+
+ai-notes/
+ai-output/
+
+# Agent rollout 日志（根目录散落）
+rollout-*.jsonl
+
+# AI 测试 / 审查截图（根目录散落，如 .codex-home.png、.codex-mobile-audit_*.png）
+.codex-*.png
+
+
+# ============================================================
+# 原型审查图与衍生素材（开发资料，不入库）
+# 不提交：.prototype-review/ 整页原型截图、prototype-specs 工作流、
+#         从原型裁切的 public/prototype-assets/
+# 可提交：public/images/、public/brand/ 等业务插画与品牌素材
+# ============================================================
+
+.prototype-review/
+**/prototype-specs/
+**/public/prototype-assets/
+
+
+# ============================================================
+# 本地 QA / 分析工具（非项目运行必需）
+# ============================================================
+
+qa/
+tools/
+
+
+# ============================================================
+# 开发文档
+# 默认不提交 docs/doc，仅保留仓库根目录 README.md
+# ============================================================
+
+docs/
+doc/
+
+*.md
+!/README.md
+
+
+# ============================================================
+# 操作系统元数据
+# ============================================================
+
+.DS_Store
+Thumbs.db
+Desktop.ini
